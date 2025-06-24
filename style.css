@@ -1,0 +1,128 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: white;
+}
+
+header {
+    background: linear-gradient(135deg, #ff0000, #000000, #0000ff);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+}
+
+.header-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 12px 25px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: darkred;
+}
+
+nav {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    margin: 0 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00bfff;
+}
+
+section {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #000000, #0000ff);
+    min-height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #ff4c4c;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.product-card {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 191, 255, 0.7);
+}
+
+.order-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #ff0000, #cc0000);
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.order-button:hover {
+    background: linear-gradient(90deg, #cc0000, #990000);
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
