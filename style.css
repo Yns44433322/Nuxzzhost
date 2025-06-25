@@ -1,19 +1,19 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #0a0f24, #11001c, #002244);
+  background: linear-gradient(to bottom, #000814, #001d3d);
   color: #fff;
 }
 
 header {
   text-align: center;
-  padding: 2rem 1rem;
-  background: #000;
+  background: linear-gradient(to right, #001d3d, #3a0ca3);
+  padding: 2rem;
 }
 
 header h1 {
   font-size: 2.5rem;
-  color: #ff0000;
+  color: #ff0033;
 }
 
 header p {
@@ -26,72 +26,77 @@ nav {
 }
 
 nav a {
-  color: #00aaff;
-  margin: 0 12px;
+  margin: 0 10px;
   text-decoration: none;
+  color: #00b4d8;
   font-weight: bold;
 }
 
 section {
   padding: 2rem;
+  text-align: center;
+  background: linear-gradient(to bottom right, #0a0f24, #11001c, #001d3d);
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111;
 }
 
 h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  color: #00ccff;
+  color: #ff3333;
 }
 
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
   justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .card {
   background: #111;
-  border-radius: 10px;
   padding: 1.5rem;
-  width: 280px;
-  box-shadow: 0 0 12px rgba(255, 0, 0, 0.2);
-  text-align: center;
+  border-radius: 10px;
+  width: 270px;
+  box-shadow: 0 0 12px rgba(0, 200, 255, 0.3);
 }
 
 .card h3 {
-  color: #00aaff;
+  color: #00b4d8;
+  margin-bottom: 0.5rem;
 }
 
-.card p {
+.card p,
+.card ul {
+  margin: 0.5rem 0;
   color: #eee;
 }
 
 .card ul {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0;
-  color: #ccc;
+  text-align: left;
+  padding-left: 1.2rem;
 }
 
 .btn {
-  display: inline-block;
-  margin-top: 12px;
-  background: #ff0000;
+  background: #ff0033;
   color: #fff;
-  padding: 10px 20px;
-  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 6px;
   text-decoration: none;
-  transition: 0.3s;
+  font-weight: bold;
+  transition: 0.2s;
 }
 
 .btn:hover {
-  background: #cc0000;
+  background: #ff1a1a;
+  transform: scale(1.05);
 }
 
 footer {
   background: #000;
-  color: #666;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-}
+  color: #aaa;
+  }
