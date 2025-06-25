@@ -1,123 +1,82 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #0d0d0d;
-    color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0d0d0d;
+  color: #fff;
 }
 header {
-    background: linear-gradient(135deg, #ff0000, #000000, #0000ff);
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(135deg, #ff0000, #000000, #0000ff);
+  padding: 80px 20px;
+  text-align: center;
 }
 .header-content h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+  font-size: 48px;
+  margin: 0;
 }
 .header-content p {
-    font-size: 20px;
-    margin-bottom: 20px;
+  font-size: 18px;
+  margin-top: 10px;
 }
 .cta-button {
-    padding: 12px 25px;
-    background-color: red;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background 0.3s;
-    margin: 5px;
-}
-.cta-button:hover {
-    background-color: darkred;
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  background: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
 }
 nav {
-    background-color: #1a1a1a;
-    text-align: center;
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+  background: #111;
+  padding: 10px;
+  text-align: center;
 }
 nav a {
-    margin: 0 20px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-nav a:hover {
-    color: #00bfff;
+  margin: 0 15px;
+  color: #00bfff;
+  text-decoration: none;
 }
 section {
-    padding: 50px 20px;
-    background: linear-gradient(135deg, #000000, #0000ff);
-    min-height: 100vh;
+  padding: 40px 20px;
 }
 h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 36px;
-    color: #ff4c4c;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ff4c4c;
 }
 .product-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 0 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
 }
 .product-card {
-    background-color: #1c1c1c;
-    color: white;
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
-    transition: transform 0.3s, box-shadow 0.3s;
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
 }
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 191, 255, 0.7);
-}
-.order-button {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: linear-gradient(90deg, #ff0000, #cc0000);
-    color: white;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: background 0.3s, transform 0.3s;
-}
-.order-button:hover {
-    background: linear-gradient(90deg, #cc0000, #990000);
-    transform: scale(1.05);
-}
+.order-button,
 .voucher-button {
-    padding: 12px 30px;
-    background-color: #ff0000;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s;
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
+.order-button:hover,
 .voucher-button:hover {
-    background-color: darkred;
+  background: #cc0000;
 }
 footer {
-    background-color: #1a1a1a;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  background: #111;
+  padding: 20px;
+  text-align: center;
+  color: #ccc;
 }
 footer a {
-    color: #00bfff;
-    text-decoration: none;
-}
-footer a:hover {
-    text-decoration: underline;
-}
+  color: #00bfff;
+      }
