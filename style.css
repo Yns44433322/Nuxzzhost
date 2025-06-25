@@ -1,120 +1,65 @@
-/* Warna utama: Hitam, Biru, Merah */
 
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #000000, #001f3f, #000000); /* Hitam ke biru tua */
-  color: #ffffff;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #000000, #000a2b);
+    color: #ffffff;
 }
-
 header {
-  background-color: #0a0a0a;
-  padding: 1.5em 1em;
-  text-align: center;
-  box-shadow: 0 2px 10px rgba(255, 0, 0, 0.2); /* Bayangan merah */
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
 }
-
 header h1 {
-  color: #ff3333; /* Merah terang */
-  margin: 0;
-  font-size: 2rem;
-  letter-spacing: 1px;
+    color: #ff2c2c;
 }
-
-nav {
-  margin-top: 1em;
+header nav a {
+    margin: 0 15px;
+    color: #00aaff;
+    text-decoration: none;
 }
-
-nav a {
-  color: #00bfff; /* Biru neon */
-  margin: 0 1.2em;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
+section {
+    padding: 40px 20px;
+    text-align: center;
 }
-
-nav a:hover {
-  color: #ff3333; /* Hover merah */
-}
-
-main {
-  padding: 2em;
-}
-
 h2 {
-  color: #ff3333;
-  text-align: center;
-  margin-bottom: 1em;
-  font-size: 1.8rem;
+    color: #ff2c2c;
 }
-
-.product-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5em;
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
-
-.product-card {
-  background-color: #111827; /* Hitam ke biru gelap */
-  padding: 1.5em;
-  border-radius: 10px;
-  width: 260px;
-  box-shadow: 0 0 15px rgba(0, 0, 255, 0.3); /* Bayangan biru */
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+.card {
+    background: #111;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
-
-.product-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+.card h3 {
+    color: #00aaff;
 }
-
-.product-card h3 {
-  color: #00bfff;
-  margin-top: 0;
-  font-size: 1.2rem;
+.card p, .card ul {
+    color: #eee;
 }
-
-.product-card p {
-  font-size: 1rem;
-  color: #ffcccc;
+.card ul {
+    text-align: left;
+    padding-left: 20px;
 }
-
-.product-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 1em 0;
-  color: #c7d2fe;
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    background: #ff2c2c;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
 }
-
-.order-button,
-.voucher-button {
-  display: inline-block;
-  margin-top: 1em;
-  padding: 0.6em 1.2em;
-  background: linear-gradient(45deg, #ff0000, #b30000);
-  color: white;
-  text-decoration: none;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.4);
-  transition: background 0.3s, transform 0.2s;
-}
-
-.order-button:hover,
-.voucher-button:hover {
-  background: linear-gradient(45deg, #cc0000, #ff3333);
-  transform: scale(1.05);
-}
-
 footer {
-  background-color: #0a0a0a;
-  padding: 1em;
-  text-align: center;
-  margin-top: 2em;
-  color: #888;
-  font-size: 0.9em;
-  border-top: 2px solid #ff0000;
-  }
+    background-color: #111;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
