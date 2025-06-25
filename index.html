@@ -2,130 +2,104 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nuxzhost Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuxzhost</title>
   <link rel="stylesheet" href="style.css" />
-  <script>
-    function getOrderLink(item) {
-      const isFriday = new Date().getDay() === 5;
-      const voucher = isFriday ? " dengan voucher NUXZFRIDAY (diskon 10%)" : "";
-      return `https://wa.me/628979240985?text=Saya mau pesan ${item}${voucher}`;
-    }
-  </script>
 </head>
 <body>
   <header>
-    <div class="header-content">
-      <h1>Selamat Datang di Nuxzhost</h1>
-      <p>Layanan panel Pterodactyl bot WA premium dan jasa profesional untuk kebutuhan digital Anda dengan harga terjangkau</p>
-      <a href="#panel" class="cta-button">Lihat Panel</a>
-      <a href="#jasa" class="cta-button">Lihat Jasa</a>
-    </div>
+    <h1>Nuxzhost</h1>
+    <nav>
+      <a href="#panel">Panel</a>
+      <a href="#jasa">Jasa</a>
+      <a href="#voucher">Voucher</a>
+      <a href="#testimoni">Testimoni</a>
+      <a href="#diskon">Diskon</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#panel">Panel</a>
-    <a href="#jasa">Jasa</a>
-    <a href="#voucher">Voucher</a>
-    <a href="#testimoni">Testimoni</a>
-    <a href="#diskon-channel">Diskon Channel</a>
-    <a href="#contact">Kontak</a>
-  </nav>
+  <main>
+    <section id="panel">
+      <h2>Paket Panel Pterodactyl Bot WA</h2>
+      <div class="product-container">
+        <!-- Panel 1-9 GB -->
+        <!-- Ulangi sesuai kebutuhan -->
+        <!-- Example -->
+        <div class="product-card">
+          <h3>1GB RAM</h3>
+          <p>Rp 500</p>
+          <ul><li>Unlimited Bandwidth</li></ul>
+          <a href="https://wa.me/628979240985?text=Saya mau pesan panel 1gb seharga rp 500" class="order-button">Pesan Sekarang</a>
+        </div>
+        <div class="product-card">
+          <h3>2GB RAM</h3>
+          <p>Rp 1000</p>
+          <ul><li>Unlimited Bandwidth</li></ul>
+          <a href="https://wa.me/628979240985?text=Saya mau pesan panel 2gb seharga rp 1000" class="order-button">Pesan Sekarang</a>
+        </div>
+        <!-- ... sampai 9GB -->
 
-  <section id="panel">
-    <h2>Paket Panel Pterodactyl Bot WA</h2>
-    <div class="product-list">
-      <!-- Panel 1GB–9GB -->
-      <!-- Kamu bisa ubah harga dan teks di bawah ini sesuai kebutuhan -->
-      ${[...Array(9)].map((_, i) => `
-      <div class="product-card">
-        <h3>${i+1}GB RAM</h3>
-        <p>Rp ${(i+1)*500}</p>
-        <ul><li>Unlimited Bandwidth</li></ul>
-        <a href="javascript:void(0);" onclick="window.open(getOrderLink('${i+1}GB RAM Rp ${(i+1)*500}'))" class="order-button">Pesan Sekarang</a>
-      </div>`).join("")}
-      <div class="product-card">
-        <h3>Unlimited RAM</h3>
-        <p>Rp 5000</p>
-        <ul><li>Unlimited Bandwidth</li></ul>
-        <a href="javascript:void(0);" onclick="window.open(getOrderLink('Unlimited RAM Rp 5000'))" class="order-button">Pesan Sekarang</a>
+        <div class="product-card">
+          <h3>Unlimited RAM</h3>
+          <p>Rp 5000</p>
+          <ul><li>Unlimited Bandwidth</li></ul>
+          <a href="https://wa.me/628979240985?text=Saya mau pesan panel unlimited seharga rp 5000" class="order-button">Pesan Sekarang</a>
+        </div>
       </div>
-      <div class="product-card">
-        <h3>Reseller Panel</h3>
-        <p>Rp 6000</p>
-        <a href="javascript:void(0);" onclick="window.open(getOrderLink('Reseller Panel Rp 6000'))" class="order-button">Pesan Sekarang</a>
-      </div>
-      <div class="product-card">
-        <h3>Admin Panel</h3>
-        <p>Rp 7000</p>
-        <a href="javascript:void(0);" onclick="window.open(getOrderLink('Admin Panel Rp 7000'))" class="order-button">Pesan Sekarang</a>
-      </div>
-      <div class="product-card">
-        <h3>PT Panel</h3>
-        <p>Rp 10000</p>
-        <a href="javascript:void(0);" onclick="window.open(getOrderLink('PT Panel Rp 10000'))" class="order-button">Pesan Sekarang</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="jasa">
-    <h2>Layanan Jasa</h2>
-    <div class="product-list">
-      <div class="product-card">
-        <h3>Rename Script</h3>
-        <p>Rp 2000 - Rp 5000</p>
-        <a href="javascript:void(0);" onclick="window.open(getOrderLink('Rename Script'))" class="order-button">Pesan Sekarang</a>
+    <section id="jasa">
+      <h2>Layanan Jasa</h2>
+      <div class="product-container">
+        <div class="product-card">
+          <h3>Rename Script</h3>
+          <p>Rp 2.000 – 5.000</p>
+          <a href="https://wa.me/628979240985?text=Pesan jasa rename script" class="order-button">Pesan Sekarang</a>
+        </div>
+        <div class="product-card">
+          <h3>Foto Profil</h3>
+          <p>Rp 3.000</p>
+          <a href="https://wa.me/628979240985?text=Pesan jasa edit foto profil" class="order-button">Pesan Sekarang</a>
+        </div>
+        <div class="product-card">
+          <h3>Paid Edit JJ</h3>
+          <p>Rp 5.000 – 20.000</p>
+          <a href="https://wa.me/628979240985?text=Pesan jasa edit JJ" class="order-button">Pesan Sekarang</a>
+        </div>
+        <div class="product-card">
+          <h3>Nokos All Negara</h3>
+          <p>Rp 5.000 – 20.000</p>
+          <a href="https://wa.me/628979240985?text=Pesan jasa nokos all negara" class="order-button">Pesan Sekarang</a>
+        </div>
       </div>
-      <div class="product-card">
-        <h3>Edit Foto Profil</h3>
-        <p>Rp 3000</p>
-        <a href="javascript:void(0);" onclick="window.open(getOrderLink('Edit Foto Profil'))" class="order-button">Pesan Sekarang</a>
-      </div>
-      <div class="product-card">
-        <h3>Paid Edit JJ</h3>
-        <p>Rp 5000 - Rp 20000</p>
-        <a href="javascript:void(0);" onclick="window.open(getOrderLink('Paid Edit JJ'))" class="order-button">Pesan Sekarang</a>
-      </div>
-      <div class="product-card">
-        <h3>Desain Logo</h3>
-        <p>Rp 5000 - Rp 10000</p>
-        <a href="javascript:void(0);" onclick="window.open(getOrderLink('Desain Logo'))" class="order-button">Pesan Sekarang</a>
-      </div>
-      <div class="product-card">
-        <h3>Bug Nomor WA</h3>
-        <p>Rp 2000 / nomor</p>
-        <a href="javascript:void(0);" onclick="window.open(getOrderLink('Bug WhatsApp'))" class="order-button">Pesan Sekarang</a>
-      </div>
-      <div class="product-card">
-        <h3>Nokos All Negara</h3>
-        <p>Rp 5000 - Rp 20000</p>
-        <a href="javascript:void(0);" onclick="window.open(getOrderLink('Nokos All Negara'))" class="order-button">Pesan Sekarang</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="voucher">
-    <h2>Voucher Spesial Jum'at</h2>
-    <p>Voucher hanya tersedia di hari Jum'at. Diskon 10% untuk semua layanan.</p>
-    <button class="voucher-button" onclick="alert('Kode Voucher: NUXZFRIDAY')">Dapatkan Voucher</button>
-  </section>
+    <section id="voucher">
+      <h2>Voucher Spesial Jum'at</h2>
+      <p>Kode voucher: <strong>NUXZFRIDAY</strong><br />Klaim hanya hari Jum'at!</p>
+      <a href="https://wa.me/628979240985?text=Klaim voucher NUXZFRIDAY" class="voucher-button">Klaim Voucher</a>
+    </section>
 
-  <section id="testimoni">
-    <h2>Testimoni Pengguna</h2>
-    <p>Lihat testimoni dari pengguna kami:</p>
-    <a class="order-button" href="https://whatsapp.com/channel/0029Vb6OVK9CMY09ehFCOo0v" target="_blank">Lihat Testimoni</a>
-  </section>
+    <section id="testimoni">
+      <h2>Testimoni Pembeli</h2>
+      <a href="https://whatsapp.com/channel/0029Vb6OVK9CMY09ehFCOo0v" target="_blank" class="order-button">Lihat Channel Testimoni</a>
+    </section>
 
-  <section id="diskon-channel">
-    <h2>Diskon Pengikut Channel</h2>
-    <p>Ikuti channel WhatsApp kami dan dapatkan diskon tambahan. Kirim bukti follow ke admin.</p>
-    <a class="order-button" href="https://whatsapp.com/channel/0029VbAqrXmL7UVb9dzYHY0t" target="_blank">Ikuti Channel Diskon</a>
-    <p>Kirim bukti ke: <a href="https://wa.me/628979240985">WhatsApp Admin</a></p>
-  </section>
+    <section id="diskon">
+      <h2>Diskon Khusus Pengikut</h2>
+      <p>Ikuti channel diskon, lalu kirim bukti ke admin!</p>
+      <a href="https://whatsapp.com/channel/0029VbAqrXmL7UVb9dzYHY0tD" target="_blank" class="voucher-button">Ikuti Channel Diskon</a>
+    </section>
 
-  <footer id="contact">
-    <p>Hubungi kami di <a href="https://wa.me/628979240985">WhatsApp</a></p>
+    <section id="kontak">
+      <h2>Hubungi Kami</h2>
+      <a href="https://wa.me/628979240985" class="order-button">Chat Admin Sekarang</a>
+    </section>
+  </main>
+
+  <footer>
     <p>&copy; 2025 Nuxzhost. All rights reserved.</p>
   </footer>
 </body>
-                              </html>
+  </html>
